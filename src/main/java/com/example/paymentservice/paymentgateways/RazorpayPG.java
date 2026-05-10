@@ -25,9 +25,9 @@ public class RazorpayPG implements PaymentGateway{
         paymentLinkRequest.put("reference_id",orderId);
         paymentLinkRequest.put("description","Payment for order no " + orderId);
         JSONObject customer = new JSONObject();
-        customer.put("name","+918553139866");
-        customer.put("contact","Nikhil Jain");
-        customer.put("email","nikhil.jain_1@scaler.com");
+        customer.put("name","+919999999999");
+        customer.put("contact","Likesh Sagar Kewat");
+        customer.put("email","leekesh1811@gmail.com");
         paymentLinkRequest.put("customer",customer);
         JSONObject notify = new JSONObject();
         notify.put("sms",true);
@@ -35,9 +35,9 @@ public class RazorpayPG implements PaymentGateway{
         paymentLinkRequest.put("notify",notify);
         paymentLinkRequest.put("reminder_enable",false);
         JSONObject notes = new JSONObject();
-        notes.put("Notes","Payment for your Amazon Order");
+        notes.put("Notes","Payment for your E-Commerce Order");
         paymentLinkRequest.put("notes",notes);
-        paymentLinkRequest.put("callback_url","https://www.scaler.com");
+        paymentLinkRequest.put("callback_url","https://ecommerce.local.com");
         paymentLinkRequest.put("callback_method","get");
 
         PaymentLink paymentLink = null;
